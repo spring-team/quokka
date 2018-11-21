@@ -25,14 +25,15 @@ import static org.springframework.web.bind.annotation.RequestMethod.GET;
 @RestController
 class QuokkaController {
 
-    @RequestMapping(method = GET, path = "/")
-    public String root() {
-        return "Spring Boot REST service running - Thu: Served by " + getClass().getName();
-    }
+	@RequestMapping(method = GET, path = "/")
+	public String root() {
+		return "Spring Boot REST service running - Thu: Served by "
+				+ getClass().getName();
+	}
 
-    @RequestMapping(method = GET, path = "hello/{name}")
-    public String person(@PathVariable String name) {
-        return "Hello " + name + "!";
-    }
+	@RequestMapping(method = GET, path = "hello/{name}")
+	public String person(@PathVariable String name) {
+		return "Hello " + name + "!";
+	}
 
 }
