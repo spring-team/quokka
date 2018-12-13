@@ -27,4 +27,5 @@ public class QuokkaApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(QuokkaApplication.class, args);
 	}
+
 }
